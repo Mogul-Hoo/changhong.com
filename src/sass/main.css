@@ -1,0 +1,548 @@
+.header_nav {
+  height: 78px;
+  position: relative;
+}
+
+.header_nav .home-nav-inner {
+  width: 226px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -613px;
+  z-index: 50;
+}
+
+.header_nav .home-nav-inner ul {
+  background: rgba(0, 0, 0, 0.4);
+  height: 480px;
+  padding: 10px 0;
+  display: block;
+  border: none;
+}
+
+.header_nav .home-nav-inner ul li {
+  height: 60px;
+  line-height: 60px;
+  cursor: pointer;
+}
+
+.header_nav .home-nav-inner ul li:hover {
+  background-color: #f12020;
+}
+
+.header_nav .home-nav-inner ul li .home-inner-menu {
+  background-position: 18px center;
+  height: 60px;
+  line-height: 60px;
+  padding-left: 75px;
+}
+
+.header_nav .home-nav-inner ul li .home-inner-menu a {
+  font-size: 16px;
+  max-width: 110px;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #fff;
+  float: left;
+}
+
+.header_nav .home-nav-inner ul li .qike {
+  background: url("../img/inner-chiq-icon.png") no-repeat 30px center;
+}
+
+.header_nav .home-nav-inner ul li .TV {
+  background: url("../img/inner-TV-icon.png") no-repeat 30px center;
+}
+
+.header_nav .home-nav-inner ul li .air {
+  background: url("../img/inner-air-icon.png") no-repeat 30px center;
+}
+
+.header_nav .home-nav-inner ul li .ice {
+  background: url("../img/inner-icebox-icon.png") no-repeat 33px center;
+}
+
+.header_nav .home-nav-inner ul li .ele {
+  background: url("../img/inner-ele-icon.png") no-repeat 30px center;
+}
+
+.header_nav .home-nav-inner ul li .digital {
+  background: url("../img/inner-digital-icon.png") no-repeat 30px center;
+}
+
+.header_nav .home-nav-inner ul li .family {
+  background: url("../img/inner-other-icon.png") no-repeat 30px center;
+}
+
+.header_nav .home-nav-inner ul li .gnxb {
+  background: url("../img/inner-gnxb-icon.png") no-repeat 30px center;
+}
+
+.header_nav .home-nav-inner ul li .home-inner-secd {
+  display: none;
+  width: 400px;
+  min-height: 476px;
+  position: absolute;
+  background-color: #fff;
+  left: 100%;
+  top: 0;
+  padding: 24px 40px 0;
+  box-shadow: 0px 1px 2px 0px #e1e1e1;
+}
+
+.header_nav .home-nav-inner ul li .home-inner-secd .inner-pro-list {
+  padding-bottom: 30px;
+}
+
+.header_nav .home-nav-inner ul li .home-inner-secd .inner-pro-list a:hover {
+  color: #f12020;
+}
+
+.header_nav .home-nav-inner ul li .home-inner-secd .inner-pro-list > a {
+  display: block;
+  height: 70px;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 16px;
+  color: #333333;
+}
+
+.header_nav .home-nav-inner ul li .home-inner-secd .inner-pro-list > a img {
+  margin-right: 10px;
+  border: 0;
+  vertical-align: middle;
+  width: 60px;
+  height: 60px;
+}
+
+.header_nav .home-nav-inner ul li .home-inner-secd .inner-pro-list .inner-pro-content {
+  line-height: 30px;
+  padding-top: 8px;
+}
+
+.header_nav .home-nav-inner ul li .home-inner-secd .inner-pro-list .inner-pro-content a {
+  font-size: 14px;
+  color: #666666;
+  padding: 0 15px;
+  border-left: 1px solid #e0e0e0;
+}
+
+.header_nav .home-nav-inner ul li .home-inner-secd .inner-pro-list .inner-pro-content a:hover {
+  color: #f12020;
+}
+
+.header_nav .home-nav-inner ul li:hover .home-inner-secd {
+  display: block;
+}
+
+main {
+  padding-bottom: 40px;
+}
+
+main .home-banner {
+  height: 500px;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+main .home-banner .home-banner-container {
+  height: 500px;
+}
+
+main .home-banner .home-banner-container a:nth-of-type(1) {
+  opacity: 1;
+}
+
+main .home-banner .home-banner-container a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+}
+
+main .home-banner .home-banner-container a img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -960px;
+  border: 0;
+  width: 1920px;
+  height: 500px;
+  cursor: pointer;
+}
+
+main .home-banner .home-banner-num {
+  position: absolute;
+  top: 475px;
+  right: 59px;
+}
+
+main .home-banner .home-banner-num a {
+  display: block;
+  height: 8px;
+  width: 8px;
+  background: url("../img/home-banner-num_16.png") no-repeat left center;
+  float: left;
+  margin-left: 17px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+main .home-banner .home-banner-num .active {
+  background: url("../img/home-banner-cur-num_16.png") no-repeat left center;
+}
+
+main .gonggao .home-radio {
+  height: 40px;
+  padding-left: 55px;
+  background: url("../img/home-radio-icon_03.png") no-repeat left 3px;
+  overflow: hidden;
+  position: relative;
+}
+
+main .gonggao .home-radio h1 {
+  line-height: 40px;
+  color: #333333;
+  float: left;
+  font-size: 14px;
+}
+
+main .gonggao .home-activity {
+  height: 160px;
+  margin-bottom: 30px;
+}
+
+main .gonggao .home-activity .home-activity-container {
+  height: 160px;
+  float: left;
+  position: relative;
+}
+
+main .gonggao .home-activity .home-activity-container .home-activity-nav {
+  width: 226px;
+  position: relative;
+  background-color: #585858;
+}
+
+main .gonggao .home-activity .home-activity-container .home-activity-nav .activity-nav-line-f {
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #717171;
+}
+
+main .gonggao .home-activity .home-activity-container .home-activity-nav .activity-nav-line-s {
+  position: absolute;
+  left: 50%;
+  display: block;
+  height: 100%;
+  width: 1px;
+  background-color: #717171;
+}
+
+main .gonggao .home-activity .home-activity-container .home-activity-nav ul li {
+  float: left;
+  width: 50%;
+  height: 80px;
+}
+
+main .gonggao .home-activity .home-activity-container .home-activity-nav ul li a {
+  display: block;
+  height: 79px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  line-height: 1;
+}
+
+main .gonggao .home-activity .home-activity-container .home-activity-nav ul li a img {
+  padding: 15px 0 5px;
+  margin: 0 auto;
+  display: block;
+  border: 0;
+}
+
+main .gonggao .home-activity .home-activity-container .home-activity-link {
+  width: 320px;
+  margin-left: 13px;
+}
+
+main .gonggao .home-activity .home-activity-container .home-activity-link a {
+  position: relative;
+  display: block;
+}
+
+main .gonggao .home-activity .home-activity-container .home-activity-link a img {
+  display: block;
+  border: 0;
+  width: 320px;
+  height: 160px;
+}
+
+main .home-series {
+  height: 685px;
+  padding-top: 30px;
+  margin-bottom: 5px;
+}
+
+main .home-series .home-series-left {
+  width: 226px;
+  float: left;
+}
+
+main .home-series .home-series-left .TV a {
+  color: #8a4532;
+}
+
+main .home-series .home-series-left .TV p {
+  border-left: 4px solid #ca694e;
+}
+
+main .home-series .home-series-left .air a {
+  color: #3a6de4;
+}
+
+main .home-series .home-series-left .air p {
+  border-left: 4px solid #759dfc;
+}
+
+main .home-series .home-series-left .ice a {
+  color: #ad6b03;
+}
+
+main .home-series .home-series-left .ice p {
+  border-left: 4px solid #ff9c00;
+}
+
+main .home-series .home-series-left .life a {
+  color: #a72cbb;
+}
+
+main .home-series .home-series-left .life p {
+  border-left: 4px solid #c59ac7;
+}
+
+main .home-series .home-series-left .other p {
+  border-left: 4px solid #ff9c00;
+}
+
+main .home-series .home-series-left .home-series-title {
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+
+main .home-series .home-series-left .home-series-title p {
+  padding-left: 13px;
+  font-size: 22px;
+  color: #333333;
+  line-height: 25px;
+  height: 25px;
+  float: left;
+}
+
+main .home-series .home-series-left .home-series-title a {
+  float: right;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+main .home-series .home-series-left .home-series-tj {
+  height: 630px;
+  width: 226px;
+  overflow: hidden;
+  display: block;
+}
+
+main .home-series .home-series-left .home-series-tj img {
+  display: block;
+  width: 226px;
+  height: 630px;
+}
+
+main .home-series .home-series-left .home-other-tj {
+  display: block;
+  height: 310px;
+  width: 226px;
+  margin-bottom: 10px;
+}
+
+main .home-series .home-series-left .home-other-tj img {
+  width: 226px;
+  height: 310px;
+  display: block;
+}
+
+main .home-series .home-series-content {
+  margin-left: 226px;
+}
+
+main .home-series .home-series-content .home-series-nav {
+  line-height: 30px;
+  height: 30px;
+  margin-bottom: 15px;
+}
+
+main .home-series .home-series-content .home-series-nav ul {
+  float: right;
+  margin-right: 8px;
+}
+
+main .home-series .home-series-content .home-series-nav ul li {
+  float: left;
+  margin-left: 33px;
+  line-height: 25px;
+  height: 25px;
+}
+
+main .home-series .home-series-content .home-series-nav ul li a {
+  color: #333333;
+}
+
+main .home-series .home-series-content .home-series-nav ul li a:hover {
+  color: #f12020;
+}
+
+main .home-series .home-series-content .home-goods-right {
+  height: 640px;
+}
+
+main .home-series .home-series-content .home-goods-right .home-ele-f:hover {
+  box-shadow: 0px 0px 5px 3px #e9e9e9;
+}
+
+main .home-series .home-series-content .home-goods-right .home-ele-f {
+  width: 190px;
+  height: 260px;
+  margin-bottom: 10px;
+  padding: 25px;
+  float: left;
+  margin-left: 10px;
+  background-color: #fff;
+}
+
+main .home-series .home-series-content .home-goods-right .home-ele-f .home-ele-img {
+  height: 160px;
+  width: 160px;
+  margin: 0 auto;
+}
+
+main .home-series .home-series-content .home-goods-right .home-ele-f .home-ele-img a {
+  display: block;
+}
+
+main .home-series .home-series-content .home-goods-right .home-ele-f .home-ele-img a img {
+  width: 160px;
+  height: 160px;
+  margin: 0 auto;
+  display: block;
+}
+
+main .home-series .home-series-content .home-goods-right .home-ele-f .home-ele-text h1 {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 15px;
+}
+
+main .home-series .home-series-content .home-goods-right .home-ele-f .home-ele-text h1 a {
+  font-size: 14px;
+  color: #000;
+}
+
+main .home-series .home-series-content .home-goods-right .home-ele-f .home-ele-text p {
+  margin-top: 10px;
+  line-height: 12px;
+  font-size: 12px;
+  color: #999;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 12px;
+}
+
+main .home-series .home-series-content .home-goods-right .home-ele-f .home-ele-text h2 {
+  font-size: 16px;
+  text-align: center;
+  color: #f12020;
+  line-height: 22px;
+  margin-top: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+main .home-series .home-series-content .home-goods-other {
+  height: 320px;
+}
+
+main .home-series-other {
+  height: 365px;
+}
+
+.xhome-fixl {
+  display: block;
+  position: fixed;
+  top: 50%;
+  margin-top: -150px;
+  margin-left: -670px;
+  left: 50%;
+}
+
+.xhome-fixl ul li {
+  width: 45px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.xhome-fixl ul li a {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.xhome-fixl ul .clicked a {
+  background-color: #ee1411;
+  color: #fff;
+}
+
+.pro-float-box {
+  position: fixed;
+  right: 0;
+  bottom: 224px;
+  display: block;
+}
+
+.pro-float-box li {
+  width: 40px;
+  height: 40px;
+}
+
+.pro-float-box li a {
+  position: relative;
+  display: block;
+}
+
+.pro-float-box li a img {
+  display: block;
+  width: 40px;
+}
+
+.pro-float-box .pro-float-center {
+  border-top: 1px solid #f9f9f9;
+  border-bottom: 1px solid #f9f9f9;
+}

@@ -1,0 +1,131 @@
+@charset 'utf-8';
+@import '_reset';
+@import '_header';
+@import '_footer';
+.reg_nav {
+    background-color: #fff;
+    .logo {
+        float: left;
+        height: 78px;
+        a {
+            display: block;
+            img {
+                width: 239px;
+                height: 78px;
+            }
+        }
+    }
+    p {
+        font-size: 24px;
+        color: #333333;
+        margin-top: 26px;
+        line-height: 26px;
+        height: 26px;
+        margin-left: 20px;
+        border-left: 2px solid rgb(221, 221, 221);
+        padding-left: 15px;
+        float: left;
+    }
+}
+
+.reg_main {
+    width: 350px;
+    height: 562px;
+    margin: 66px auto 0 auto;
+    padding-bottom: 66px;
+    // background-color: pink;
+    .row {
+        position: relative;
+        height: 78px;
+        .reg_lable {
+            width: 170px;
+            height: 40px;
+            line-height: 40px;
+            text-align: right;
+            overflow: hidden;
+            color: #000;
+            position: absolute;
+            top: 0;
+            left: -190px;
+        }
+        input {
+            height: 38px;
+            line-height: 38px;
+            width: 318px;
+            background-color: #ffffff;
+            border: 1px solid #dedede;
+            text-indent: 10px;
+            font-size: 12px;
+        }
+        .success {
+            width: 40px;
+            color: #4384b2;
+            background: url(../img/signed-right-icon.png) no-repeat right center;
+            display: none;
+        }
+        .error {
+            height: 38px;
+            line-height: 38px;
+            padding-left: 28px;
+            margin-left: 5px;
+            background: url(../img/signed-error-icon.png) no-repeat left center;
+            color: #e42121;
+            display: none;
+        }
+        .tips {
+            height: 38px;
+            line-height: 38px;
+            margin-left: 5px;
+            color: #989898;
+        }
+    }
+    .agreement {
+        height: 48px;
+        margin-top: 8px;
+        input {
+            float: left;
+            cursor: pointer;
+            display: block;
+            margin-top: 9px;
+        }
+        .agreement_content {
+            width: 350px;
+            height: 32px;
+            line-height: 32px;
+            color: rgb(102, 102, 102);
+            margin-left: 20px;
+            a {
+                color: #f12020;
+            }
+        }
+        span {
+            width: 350px;
+            height: 38px;
+            line-height: 38px;
+            padding-left: 28px;
+            margin-left: 5px;
+            background: url(../img/signed-error-icon.png) no-repeat left center;
+            color: #e42121;
+        }
+    }
+    .reg_btn {
+        margin-top: 21px;
+        width: 320px;
+        text-align: center;
+        background-color: #f12020;
+        height: 44px;
+        line-height: 44px;
+        color: #ffffff;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .to_login {
+        height: 16px;
+        line-height: 16px;
+        text-align: center;
+        margin-top: 15px;
+        a {
+            color: #f12020;
+        }
+    }
+}
