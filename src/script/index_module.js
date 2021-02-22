@@ -8,52 +8,52 @@ $('img.lazy').lazyload({
 });
 
 //首页购物车的渲染
-// if (localStorage.getItem('localsid') && localStorage.getItem('localnum')) {
-//     let arrsid = localStorage.getItem('localsid').split(',');
-//     let arrnum = localStorage.getItem('localnum').split(',');
-//     for (let i = 0; i < arrsid.length; i++) {
-//         render(arrsid[i], arrnum[i]);
-//     }
-// }
+if (localStorage.getItem('localsid') && localStorage.getItem('localnum')) {
+    let arrsid = localStorage.getItem('localsid').split(',');
+    let arrnum = localStorage.getItem('localnum').split(',');
+    for (let i = 0; i < arrsid.length; i++) {
+        render(arrsid[i], arrnum[i]);
+    }
+}
 
 //封装函数实现渲染过程 - 克隆方式
-// function render(sid, num) {
-//     $.ajax({
-//         url: 'http://192.168.64.2/www/workspace/changhong.com/php/alldata.php',
-//         dataType: 'json'
-//     }).done(function(data) {
-//         $.each(data, function(index, value) {
-//             if (value.sid === sid) {
-//                 let $clonebox = $('.tool-tips-row:hidden').clone(true, true);
+function render(sid, num) {
+    $.ajax({
+        url: 'http://192.168.64.2/www/workspace/changhong.com/php/alldata.php',
+        dataType: 'json'
+    }).done(function(data) {
+        $.each(data, function(index, value) {
+            if (value.sid === sid) {
+                let $clonebox = $('.tool-tips-row:hidden').clone(true, true);
 
-//                 $clonebox.find('p a').html(value.title);
-//                 $clonebox.find('h1 span').html(value.price);
-//                 $clonebox.find('h1 b').html('x ' + num);
-//                 $clonebox.css('display', 'block');
-//                 $('.tips-nogoods').hide();
-//                 $('.tool-container-tips-warp').append($clonebox);
-//                 $('.tool-goods-pay').show();
+                $clonebox.find('p a').html(value.title);
+                $clonebox.find('h1 span').html(value.price);
+                $clonebox.find('h1 b').html('x ' + num);
+                $clonebox.css('display', 'block');
+                $('.tips-nogoods').hide();
+                $('.tool-container-tips-warp').append($clonebox);
+                $('.tool-goods-pay').show();
 
-//                 // index_allprice();
-//             }
-//         })
-//     })
-// }
+                // index_allprice();
+            }
+        })
+    })
+}
 //总价
-// function index_allprice() {
-//     let $allnum = 0;
-//     let $allprice = 0;
-//     $('.tool-tips-row:visible').each(function(index, element) { //索引  元素的元素对象
-//         if ($(this).find('.car-checkbox input').prop('checked')) { //判断当前商品前面的复选框是否是选中状态的
-//             $allnum += parseInt($(this).find('.qt-form input').val());
-//             $allprice += parseInt(($(this).find('.car-detail-price span').html()) * ($(this).find('.qt-form input').val()));
-//         }
+function index_allprice() {
+    let $allnum = 0;
+    let $allprice = 0;
+    $('.tool-tips-row:visible').each(function(index, element) { //索引  元素的元素对象
+        if ($(this).find('.car-checkbox input').prop('checked')) { //判断当前商品前面的复选框是否是选中状态的
+            $allnum += parseInt($(this).find('.qt-form input').val());
+            $allprice += parseInt(($(this).find('.car-detail-price span').html()) * ($(this).find('.qt-form input').val()));
+        }
 
-//     });
-//     $('.sum-pro-count span').html($allnum);
-//     $('.sum-price span').html($allprice);
-//     $('.total-type').html($allnum);
-// }
+    });
+    $('.sum-pro-count span').html($allnum);
+    $('.sum-price span').html($allprice);
+    $('.total-type').html($allnum);
+}
 
 //登录注册
 const $unlogin = $('.unlogin');
