@@ -203,22 +203,3 @@ $quit.on('click', function() {
     $unlogin.show();
     window.localStorage.removeItem('loginphone'); //删除本地存储
 });
-
-//登录注册
-const $unlogin = $('.unlogin');
-const $logined = $('.logined');
-const $quit = $('.quit');
-const $infologined = $('.info-logined')
-
-if (window.localStorage.getItem('loginphone')) {
-    $logined.show();
-    $unlogin.hide();
-    $('.login_name').html(window.localStorage.getItem('loginphone'));
-    $infologined.html(window.localStorage.getItem('loginphone'));
-}
-
-$quit.on('click', function() {
-    $logined.hide();
-    $unlogin.show();
-    window.localStorage.removeItem('loginphone'); //删除本地存储
-});
